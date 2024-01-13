@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <title>Cool Search Bar</title>
+</head>
+<body>
+
+<div class="search-container" id="search-container">
+  <div id="background-overlay"></div>
+  <div class="search-box" id="search-box">
+    <input type="text" id="search-input" placeholder="Start your search here" oninput="onSearchInput()" onfocus="onSearchFocus()">
+    <span id="search-icon" class="icon">&#128269;</span>
+  </div>
+</div>
+
+<script src="<%= asset_path('script.js') %>"></script>
+</body>
+</html>
