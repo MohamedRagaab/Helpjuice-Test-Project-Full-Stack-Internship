@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
+  get 'analytics', to: 'analytics#index'
 
   namespace :api do
     namespace :v1 do

@@ -4,7 +4,7 @@ module Api
       def list_queries
         all_queries = SearchQuery.all
 
-        render json: { data: all_queries.map(&:query) }, status: :ok
+        render json: { data: all_queries }, status: :ok
       end
 
       def index
@@ -21,7 +21,7 @@ module Api
           create_new_query(ip_address, query)
         end
 
-        render json: { data: { status: 'Search query received' } }, status: :ok
+        render json: { data: { success: true } }, status: :ok
       end
 
       private

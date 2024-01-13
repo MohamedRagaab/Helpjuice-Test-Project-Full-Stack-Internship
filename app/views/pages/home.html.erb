@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload' %>
   <title>Cool Search Bar</title>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/analytics">Analytics</a></li>
+  </ul>
+</nav>
 
 <div class="search-container" id="search-container">
   <div id="background-overlay"></div>
