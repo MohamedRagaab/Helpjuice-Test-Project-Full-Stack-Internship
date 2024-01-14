@@ -10,15 +10,17 @@ module Api
       def index
         query = params[:query].strip
         ip_address = request.remote_ip
+        first_two_parts = ip_address.split('.').take(2).join('.')
+        modified_ip = "#{first_two_parts}.***.***"
 
-        Rails.logger.info("Search query: #{query}, IP address: #{ip_address}")
+        Rails.logger.info("Search query: #{query}, IP address: #{modified_ip}")
 
-        queries_from_ip = SearchQuery.where(ip_address: ip_address)
+        queries_from_ip = SearchQuery.where(ip_address: modified_ip)
 
         if partial_query_exists?(queries_from_ip, query)
           update_existing_queries(queries_from_ip, query)
         elsif !complete_query_exists?(queries_from_ip, query)
-          create_new_query(ip_address, query)
+          create_new_query(modified_ip, query)
         end
 
         render json: { data: { success: true } }, status: :ok
