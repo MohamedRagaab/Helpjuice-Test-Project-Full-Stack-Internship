@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   function fetchDataAndDisplay() {
-    fetch('http://0.0.0.0:10000/api/v1/list_queries')
+    fetch('https://realtime-search-box-cyl6.onrender.com/api/v1/list_queries')
       .then(response => response.json())
       .then(data => displayAnalytics(data.data))
       .catch(error => console.error('Error fetching analytics:', error));
