@@ -26,7 +26,7 @@ function onSearchFocus() {
 }
 
 function callApi(query) {
-  fetch(`/api/v1/articles/search?query=${encodeURIComponent(query)}`)
+  fetch(`https://realtime-search-box-cyl6.onrender.com/api/v1/articles/search?query=${encodeURIComponent(query)}`)
     .then(response => response.json())
     .then(data => {
       console.log(data);
