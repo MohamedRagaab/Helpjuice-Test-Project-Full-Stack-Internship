@@ -1,5 +1,6 @@
 # Realtime Search box
 * Helpjuice Test Project: Full-Stack Internship.
+* Try it live from [here](https://realtime-search-box-cyl6.onrender.com)
 ## Languages and frameworks 📑
 * Ruby on Rails
 * sqlite3
@@ -22,26 +23,15 @@ docker run --name your_container_name -d -p port:port your_image_name
 
 ## Examples 🖼️
 * write a search query
+
 <div align='center'>
-<img height="350px" src="https://github.com/MohamedRagaab/Instabug-Backend-Challenge/assets/38363762/1d3e1d04-67e0-48a2-a48b-e64d14f18808">
+<img height="350px" src="https://github.com/MohamedRagaab/Helpjuice-Test-Project-Full-Stack-Internship/assets/38363762/6d93fb6d-dece-49f0-8659-d245d86bd7fa">
 <hr/>
 </div>
 
-* Create a chat under the app
+* see users analytics
 <div align='center'>
-<img height="350px" src="https://github.com/MohamedRagaab/Instabug-Backend-Challenge/assets/38363762/26033bfa-6fcc-4a61-a628-559fc7adfaf3">
-<hr/>
-</div>
-
-* Create a message under the chat
-<div align='center'>
-<img height="350px" src="https://github.com/MohamedRagaab/Instabug-Backend-Challenge/assets/38363762/e6fc4235-4f36-4228-b0e1-593efb2581bb">
-<hr/>
-</div>
-
-* search the message under the chat
-<div align='center'>
-<img height="350px" src="https://github.com/MohamedRagaab/Instabug-Backend-Challenge/assets/38363762/405315fe-1abe-4438-a5c0-ae58c91e5691">
+<img height="350px" src="https://github.com/MohamedRagaab/Helpjuice-Test-Project-Full-Stack-Internship/assets/38363762/33fb0ac9-5913-4b5a-a985-3b2e1074869b">
 <hr/>
 </div>
 
