@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   function fetchDataAndDisplay() {
-    fetch('http://localhost:3000/api/v1/list_queries')
+    fetch('http://0.0.0.0:10000/api/v1/list_queries')
       .then(response => response.json())
       .then(data => displayAnalytics(data.data))
       .catch(error => console.error('Error fetching analytics:', error));
