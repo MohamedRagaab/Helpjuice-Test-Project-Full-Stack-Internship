@@ -39,6 +39,7 @@ docker run --name your_container_name -d -p port:port your_image_name
 - [x] realtime search box
 - [x] instant search
 - [x] avoid pyramid problem
+- [x] using debouncing technique
 - [x] show users analytics
 - [x] use Rspec for testing
 
